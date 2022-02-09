@@ -1,0 +1,128 @@
+@charset 'utf-8';
+
+/*header*/
+#header{
+    height:50px;
+    line-height:50px;
+    position:relative;
+}
+h1{text-align:center;}
+h1 img{width:170px;}
+.panel{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:15px;
+    left:15px;
+    text-indent:-9999px;
+    background:url(../images/menuIcon.png) no-repeat center center;
+    background-size:cover;
+}
+.panel a{
+    height:100%;
+    display:block;
+}
+/*menuPop*/
+.menuPop{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    padding:20% 10%;
+    box-sizing:border-box;
+    background:#fff url(../images/logo.png) no-repeat center 20px;
+    background-size:170px;
+    z-index:100;
+    text-align:center;
+    font-family:'NotoSans',sans-serif;
+    font-size:12px;
+    font-weight:500;
+}
+.closeBtn{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:15px;
+    left:15px;
+    text-indent:-9999px;
+    background:url(../images/exitIcon.png) no-repeat center center;
+    background-size:cover;
+}
+.closeBtn a, .logInBtn a{
+    display:block;
+    height:100%;
+}
+.logInBtn{
+    height:50px;
+    line-height:50px;
+    border:2px solid #333;
+    letter-spacing:5px;
+}
+.iconList{margin-top:30px;}
+.iconList>li{
+    height:80px;
+    line-height:30px;
+    display:inline-block;
+    margin-right:10px;
+}
+.iconList>li a{
+    width:55px;
+    height:55px;
+    display:block;
+    background:url(../images/joinIcon.png) no-repeat center center;
+    background-size:40px;
+    border:2px solid #333;
+    border-radius:50%;
+    font-size:0;
+}
+.iconList>li:last-child{margin-right:0;}
+.iconList .icon02 a{background-image:url(../images/myIcon.png);}
+.iconList .icon03 a{background-image:url(../images/csIcon.png);}
+.iconList .icon04 a{background-image:url(../images/locateIcon.png);}
+
+.gnb{
+    font-size:25px;
+    font-weight:bold;
+    margin-top:30px;
+}
+
+/*topBtn*/
+.topBtn{
+    width:50px;
+    position:fixed;
+    z-index:10;
+    right:2px;
+    bottom:20px;
+}
+.topBtn img{
+    width:100%;
+    display:block;
+}
+
+/*footer*/
+#footer{
+    background:#444;
+    color:#888;
+    padding:20px 0;
+    position:relative;
+}
+.fLogo{margin-left:10%;}
+.fLogo img{width:18px;}
+.fLogo::after{
+    content:"";
+    display:inline-block;
+    width:2px;
+    height:160px;
+    background:#888;
+    margin:0 10px;
+}
+.fInfo{
+    width:70%;
+    line-height:14px;
+    position:absolute;
+    top:50%;
+    transform:translate(33%,-50%);
+    font-family:'NotoSans',sans-serif;
+    font-size:10px;
+}
+.fInfo span{display:block;}
